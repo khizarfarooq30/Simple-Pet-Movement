@@ -2,6 +2,8 @@
 # Unity folders and files
 ###
 [Aa]ssets/AssetStoreTools*
+External*
+Logs*
 [Bb]uild/
 [Ll]ibrary/
 [Ll]ocal[Cc]ache/

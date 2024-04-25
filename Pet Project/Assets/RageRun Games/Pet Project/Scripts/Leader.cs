@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Leader : MonoBehaviour
 {
    [SerializeField] private float moveSpeed = 5f;
 
@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
       float up = Input.GetKey(KeyCode.UpArrow) ? 1 : Input.GetKey(KeyCode.DownArrow) ? -1 : 0;
 
       Vector3 moveVec = new Vector3(horizontal, up, vertical);
-      
       transform.position += moveVec * (moveSpeed * Time.deltaTime);
    }
 
