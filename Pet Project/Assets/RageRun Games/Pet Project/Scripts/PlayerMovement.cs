@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,20 +19,21 @@ public class PlayerMovement : MonoBehaviour
    {
       horizontal = Input.GetAxis("Horizontal");
       vertical = Input.GetAxis("Vertical");
+      float up = Input.GetKey(KeyCode.UpArrow) ? 1 : Input.GetKey(KeyCode.DownArrow) ? -1 : 0;
 
-      Vector3 moveVec = new Vector3(horizontal, 0f, vertical);
+      Vector3 moveVec = new Vector3(horizontal, up, vertical);
       
       transform.position += moveVec * (moveSpeed * Time.deltaTime);
    }
 
    private void OnTriggerEnter(Collider other)
    {
-      if (other.TryGetComponent(out PetMovement petMovement))
+      if (other.TryGetComponent(out PetMovement petMovement) && !petMovement.EnableFollow)
       {
          if (!petMovement.IsFollowingTarget())
          {
-            followTransforms.Add(other.transform);
             petMovement.SetFollowTarget(followTransforms[^1]);
+            followTransforms.Add(other.transform);
          }
       }
    }
