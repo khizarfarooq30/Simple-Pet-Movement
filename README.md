@@ -19,10 +19,10 @@ The pet movement approach consists of two main components: the leader and the fo
 ### Video
 https://github.com/khizarfarooq30/Simple-Pet-Movement/assets/24452001/e7dd4dab-6324-4ae8-adaf-df4260e3612f
 
-# Contributions
+### Contributions
 Contributions to improve or extend the functionality of the pet movement system are welcome! Feel free to fork the repository, make your changes, and submit a pull request.
 
-# License
+### License
 This project is licensed under the [MIT License](https://opensource.org/license/mit/).
 
 
