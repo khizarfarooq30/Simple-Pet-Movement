@@ -16,6 +16,9 @@ The pet movement approach consists of two main components: the leader and the fo
 - Customization: Customize the movement parameters of each follower in the Inspector to achieve the desired behavior.
 - Gameplay Integration: Use triggers or other gameplay mechanics to dynamically add followers to the leader as needed during gameplay.
 
+### Video
+https://github.com/khizarfarooq30/Simple-Pet-Movement/assets/24452001/e7dd4dab-6324-4ae8-adaf-df4260e3612f
+
 # Contributions
 Contributions to improve or extend the functionality of the pet movement system are welcome! Feel free to fork the repository, make your changes, and submit a pull request.
 
