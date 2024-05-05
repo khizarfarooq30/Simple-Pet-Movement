@@ -3,22 +3,40 @@ using UnityEngine;
 
 public class Leader : MonoBehaviour
 {
-   [SerializeField] private float moveSpeed = 5f;
-   [SerializeField] private Animator animator;
-   
+   [Header("Leader Settings")]
+   [SerializeField] public float moveSpeed = 5f;
    [SerializeField] private bool useUpwardMovement;
+
+   [Header("Pet Settings")]
+   public float maxDistance = 3f;
+   public float stopDistance = 1f;
+   public Vector3 followOffset = new Vector3(1f, 0f, 1f);
+   public FollowMode followMode;
+   
+   public float repelAmount = 1f;
+
+   public float goldenRatioRadius = 1f;
+   public float goldenRatioAngle = 137.5f;
+   
+   public float formationDistance = 0.5f;
+
+   public int rowSize = 3;
+   public int columnSize = 3;
 
    private float horizontal;
    private float vertical;
    private float up;
    
-   private List<Transform> followTransforms = new List<Transform>();
-
+   private List<Transform> petTransforms = new List<Transform>();
+   
+   // petData
+   
+ 
    public Vector3 MoveVector { get; set; }
 
    private void Start()
    {
-      followTransforms.Add(transform);
+      petTransforms.Add(transform);
    }
 
    private void Update()
@@ -36,13 +54,7 @@ public class Leader : MonoBehaviour
       
       if (MoveVector.magnitude > 0.1f)
       {
-         // smooth rotation
          transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(MoveVector), Time.deltaTime * 10f);
-      }
-      
-      if (animator != null)
-      {
-         animator.SetBool("Moving", MoveVector.magnitude > 0.1f);
       }
    }
 
@@ -52,9 +64,33 @@ public class Leader : MonoBehaviour
       {
          if (!petMovement.IsFollowingTarget())
          {
-            petMovement.SetFollowTarget(followTransforms[^1]);
-            followTransforms.Add(other.transform);
+            petMovement.SetFollowOffset(followOffset);
+            
+            if (followMode == FollowMode.leaderRepelPetMovement || followMode == FollowMode.rowColumnPatterMovement || followMode == FollowMode.boxFormationPatternMovement)
+            {
+               var row = petTransforms.Count / rowSize;
+               var column = petTransforms.Count % columnSize;
+               var centerOffset = new Vector3((columnSize - 1) * formationDistance * 0.5f, 0f, (rowSize - 1) * formationDistance * 0.5f);
+               followOffset = new Vector3(column * formationDistance, 0f, row * formationDistance) - centerOffset;
+            }
+            
+            petMovement.SetFollowTarget(petTransforms[^1]);
+            petTransforms.Add(other.transform);
          }
       }
    }
+   
+   
 }
+
+
+public enum FollowMode
+{
+   None,
+   chainedMovement,
+   goldenRatioMovement,
+   leaderRepelPetMovement,
+   rowColumnPatterMovement,
+   boxFormationPatternMovement,
+}
+
