@@ -1995,12 +1995,13 @@ MonoBehaviour:
   moveSpeed: 5
   useUpwardMovement: 1
   maxDistance: 3
-  stopDistance: 0.25
+  stopDistance: 1
   followOffset: {x: -0.5, y: 0, z: -0.5}
-  followMode: 1
+  followMode: 5
+  repelAmount: 1
   goldenRatioRadius: 1
   goldenRatioAngle: 137.5
-  formationDistance: 2
+  formationDistance: 0.25
   rowSize: 2
   columnSize: 2
 --- !u!4 &5111281238818271651

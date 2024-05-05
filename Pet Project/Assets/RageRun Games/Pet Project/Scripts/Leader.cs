@@ -11,8 +11,7 @@ public class Leader : MonoBehaviour
    public float maxDistance = 3f;
    public float stopDistance = 1f;
    public Vector3 followOffset = new Vector3(1f, 0f, 1f);
-   public FollowMode followMode;
-   
+
    public float repelAmount = 1f;
 
    public float goldenRatioRadius = 1f;
@@ -28,10 +27,8 @@ public class Leader : MonoBehaviour
    private float up;
    
    private List<Transform> petTransforms = new List<Transform>();
-   
-   // petData
-   
- 
+  
+
    public Vector3 MoveVector { get; set; }
 
    private void Start()
@@ -66,31 +63,15 @@ public class Leader : MonoBehaviour
          {
             petMovement.SetFollowOffset(followOffset);
             
-            if (followMode == FollowMode.leaderRepelPetMovement || followMode == FollowMode.rowColumnPatterMovement || followMode == FollowMode.boxFormationPatternMovement)
-            {
-               var row = petTransforms.Count / rowSize;
-               var column = petTransforms.Count % columnSize;
-               var centerOffset = new Vector3((columnSize - 1) * formationDistance * 0.5f, 0f, (rowSize - 1) * formationDistance * 0.5f);
-               followOffset = new Vector3(column * formationDistance, 0f, row * formationDistance) - centerOffset;
-            }
+            var row = petTransforms.Count / rowSize;
+            var column = petTransforms.Count % columnSize;
+            var centerOffset = new Vector3((columnSize - 1) * formationDistance * 0.5f, 0f, (rowSize - 1) * formationDistance * 0.5f);
+            followOffset = new Vector3(column * formationDistance, 0f, row * formationDistance) - centerOffset;
             
             petMovement.SetFollowTarget(petTransforms[^1]);
             petTransforms.Add(other.transform);
          }
       }
    }
-   
-   
-}
-
-
-public enum FollowMode
-{
-   None,
-   chainedMovement,
-   goldenRatioMovement,
-   leaderRepelPetMovement,
-   rowColumnPatterMovement,
-   boxFormationPatternMovement,
 }
 
