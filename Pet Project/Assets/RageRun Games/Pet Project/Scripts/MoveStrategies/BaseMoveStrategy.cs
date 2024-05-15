@@ -1,25 +1,19 @@
 using UnityEngine;
 
-public abstract class BaseMovementStrategies
+public abstract class BaseMoveStrategy
 {
     protected Leader leader;
-    protected Transform leaderTransform;
     protected Transform followTransform;
     protected Transform currentTransform;
     protected Vector3 velocity;
-    protected float initialYPosition;
-    protected Vector3 followOffset;
     protected int index;
 
-    public BaseMovementStrategies(Leader leader, Transform leaderTransform, Transform followTransform, Transform currentTransform, Vector3 followOffset, int index)
+    public BaseMoveStrategy(Leader leader,  Transform followTransform, Transform currentTransform, int index)
     {
         this.leader = leader;
-        this.leaderTransform = leaderTransform;
         this.followTransform = followTransform;
         this.currentTransform = currentTransform;
-        this.followOffset = followOffset;
         this.index = index;
-        initialYPosition = followTransform.position.y;
     }
 
     public abstract void Move();
@@ -43,4 +37,12 @@ public abstract class BaseMovementStrategies
         float z = Mathf.Sqrt(index) * radius * Mathf.Sin(angle * index * Mathf.Deg2Rad);
         return new Vector3(x, 0f, z);
     }
+    
+    public Vector3 GetCircularPosition(int index, float radius, float angle)
+    {
+        float x = radius * Mathf.Cos(angle * index * Mathf.Deg2Rad);
+        float z = radius * Mathf.Sin(angle * index * Mathf.Deg2Rad);
+        return new Vector3(x, 0f, z);
+    }
+
 }

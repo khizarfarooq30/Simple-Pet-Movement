@@ -1,24 +1,21 @@
 using UnityEngine;
 
-public class RowColumnAdaptiveFormation : BaseMovementStrategies
+public class RowColumnAdaptiveFormationStrategy : BaseMoveStrategy
 {
-    private int rowSize;
-    private int columnSize;
-    private float formationDistance;
-
-    public RowColumnAdaptiveFormation(Leader leader, Transform leaderTransform,
-        Transform followTransform, Transform currentTransform, Vector3 followOffset, int index, int rowSize,
-        int columnSize, float formationDistance)
-        : base(leader, leaderTransform, followTransform, currentTransform, followOffset, index)
+    public RowColumnAdaptiveFormationStrategy(Leader leader, 
+        Transform followTransform, Transform currentTransform,  int index)
+        : base(leader,  followTransform, currentTransform,  index)
     {
-        this.rowSize = rowSize;
-        this.columnSize = columnSize;
-        this.formationDistance = formationDistance;
+    
     }
 
     public override void Move()
     {
         int rowIndex, columnIndex;
+        
+        int rowSize = leader.rowSize;
+        int columnSize = leader.columnSize;
+        float formationDistance = leader.formationDistance;
 
         if (index < columnSize - 1)
         {
@@ -40,6 +37,8 @@ public class RowColumnAdaptiveFormation : BaseMovementStrategies
             rowIndex = rowSize - 2 - (index - (columnSize * 2 + rowSize - 3));
             columnIndex = 0;
         }
+        
+        var leaderTransform = leader.transform;
 
         float cornerOffsetX = (columnSize - 1) * formationDistance * 0.5f;
         float cornerOffsetZ = (rowSize - 1) * formationDistance * 0.5f;
