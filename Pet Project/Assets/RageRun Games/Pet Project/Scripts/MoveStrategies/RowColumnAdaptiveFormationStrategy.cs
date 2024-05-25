@@ -13,7 +13,7 @@ public class RowColumnAdaptiveFormationStrategy : BaseMoveStrategy
     {
         int rowIndex, columnIndex;
         
-        int rowSize = leader.columnSize;
+        int rowSize = leader.rowSize;
         int columnSize = leader.columnSize;
         float formationDistance = leader.formationDistance;
 

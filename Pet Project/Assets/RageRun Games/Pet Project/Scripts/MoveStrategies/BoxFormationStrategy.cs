@@ -13,7 +13,7 @@ public class BoxFormationStrategy : BaseMoveStrategy
         int columnIndex = index % leader.columnSize;
         
         float cornerOffsetX = (leader.columnSize - 1) * leader.formationDistance * 0.5f;
-        float cornerOffsetZ = (leader.columnSize - 1) * leader.formationDistance * 0.5f;
+        float cornerOffsetZ = (leader.rowSize - 1) * leader.formationDistance * 0.5f;
         
         var leaderTransform = leader.transform;
         
