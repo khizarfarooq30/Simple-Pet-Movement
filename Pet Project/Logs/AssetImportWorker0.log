@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity/Transferable-Repo/Pet Project
+D:/Unity/Personal Projects/Simple Pet Movement/Pet Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59263
-Successfully changed project path to: D:/Unity/Transferable-Repo/Pet Project
-D:/Unity/Transferable-Repo/Pet Project
+62991
+Successfully changed project path to: D:/Unity/Personal Projects/Simple Pet Movement/Pet Project
+D:/Unity/Personal Projects/Simple Pet Movement/Pet Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,16 +49,16 @@ D:/Unity/Transferable-Repo/Pet Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19376] Host "[IP] 192.168.1.22 [Port] 0 [Flags] 2 [Guid] 3144981140 [EditorId] 3144981140 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GRKFVK9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16808] Host "[IP] 192.168.1.34 [Port] 0 [Flags] 2 [Guid] 1217245621 [EditorId] 1217245621 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GRKFVK9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19376] Host "[IP] 192.168.1.22 [Port] 0 [Flags] 2 [Guid] 3144981140 [EditorId] 3144981140 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GRKFVK9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16808] Host "[IP] 192.168.1.34 [Port] 0 [Flags] 2 [Guid] 1217245621 [EditorId] 1217245621 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GRKFVK9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
-Refreshing native plugins compatible for Editor in 5.13 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 4.68 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity/Transferable-Repo/Pet Project/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/Personal Projects/Simple Pet Movement/Pet Project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -70,49 +70,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56536
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005754 seconds.
-- Loaded All Assemblies, in  0.284 seconds
+Registered in 0.005263 seconds.
+- Loaded All Assemblies, in  0.249 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 149 ms
+Android Extension - Scanning For ADB Devices 144 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.359 seconds
-Domain Reload Profiling: 643ms
-	BeginReloadAssembly (85ms)
+- Finished resetting the current domain, in  0.362 seconds
+Domain Reload Profiling: 610ms
+	BeginReloadAssembly (74ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (27ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (120ms)
-		LoadAssemblies (85ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (105ms)
+		LoadAssemblies (73ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (118ms)
-			TypeCache.Refresh (117ms)
-				TypeCache.ScanAssembly (105ms)
+		AnalyzeDomain (103ms)
+			TypeCache.Refresh (102ms)
+				TypeCache.ScanAssembly (92ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (359ms)
+	FinalizeReload (362ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (322ms)
+		SetupLoadedEditorAssemblies (321ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (228ms)
-			SetLoadedEditorAssemblies (2ms)
+			InitializePlatformSupportModulesInManaged (219ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (61ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
+			ProcessInitializeOnLoadAttributes (66ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,7 +120,7 @@ Domain Reload Profiling: 643ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.588 seconds
+- Loaded All Assemblies, in  0.477 seconds
 Refreshing native plugins compatible for Editor in 1.82 ms, found 6 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
@@ -130,231 +130,57 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.423 seconds
-Domain Reload Profiling: 1011ms
-	BeginReloadAssembly (106ms)
+- Finished resetting the current domain, in  0.446 seconds
+Domain Reload Profiling: 923ms
+	BeginReloadAssembly (110ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (14ms)
-	RebuildCommonClasses (21ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (428ms)
-		LoadAssemblies (289ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (307ms)
+		LoadAssemblies (206ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (204ms)
-			TypeCache.Refresh (177ms)
-				TypeCache.ScanAssembly (163ms)
-			ScanForSourceGeneratedMonoScriptInfo (19ms)
+		AnalyzeDomain (164ms)
+			TypeCache.Refresh (142ms)
+				TypeCache.ScanAssembly (130ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (424ms)
+	FinalizeReload (447ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (320ms)
+		SetupLoadedEditorAssemblies (336ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (16ms)
+			InitializePlatformSupportModulesInManaged (18ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (199ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (210ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
 			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (4ms)
-New Universal Render Pipeline Asset_Renderer is missing RendererFeatures
-This could be due to missing scripts or compile error.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:LogError (object,UnityEngine.Object)
-UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.9/Runtime/ScriptableRendererData.cs:197)
-UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.9/Runtime/ScriptableRendererData.cs:86)
-
-(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.9/Runtime/ScriptableRendererData.cs Line: 197)
-
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.64 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.73 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5219 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 116 unused Assets / (3.4 MB). Loaded Objects now: 5651.
-Memory consumption went from 223.8 MB to 220.3 MB.
-Total: 3.597600 ms (FindLiveObjects: 0.555200 ms CreateObjectMapping: 0.171500 ms MarkObjects: 1.935200 ms  DeleteObjects: 0.934800 ms)
+Unloading 5163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 155 unused Assets / (6.4 MB). Loaded Objects now: 5555.
+Memory consumption went from 210.1 MB to 203.7 MB.
+Total: 3.643300 ms (FindLiveObjects: 0.237100 ms CreateObjectMapping: 0.127000 ms MarkObjects: 1.762800 ms  DeleteObjects: 1.515600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/GrassColorMapRenderer.cs: 77f44fee0406869437ba29cafb9aa562 -> 
-  custom:scripting/monoscript/fileName/ShaderConfigurator.cs: 9233b497520a37f23f7d7d07ba7e8b61 -> 
-  custom:scripting/monoscript/fileName/DOTweenModuleUtils.cs: 34ad347c902a97803d1c13fe65e97957 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/GrassBenderInspector.cs: f61e50f01f4350895b9638f686719383 -> 
-  custom:scripting/monoscript/fileName/Cursors.cs: 8ceb506cb43bbbf8bc15fe66a4c323be -> 
-  custom:scripting/monoscript/fileName/CameraPosition.cs: e732973052cb68f8e8bdea9d3c698b87 -> 
-  custom:scripting/monoscript/fileName/BF_RotatorDisplay.cs: 2a21ef8f2c3ff5cfd076f7dfb72cddbe -> 
-  custom:scripting/monoscript/fileName/BF_AssetManager.cs: 5d2668df5829c5ef96167aa1edb6eee2 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/StylizedGrassEditor.cs: 07c61d94937c0dbdae3e4047a143f086 -> 
-  custom:scripting/monoscript/fileName/DOTweenModuleUnityVersion.cs: 5fda8b30fb2f0276062c9b201e3b53c4 -> 
-  custom:scripting/monoscript/fileName/PipelineUtilities.cs: 9d2ede4fa77845ef53bdeae294446944 -> 
-  custom:scripting/monoscript/fileName/MaterialUI.cs: c30fbbb3859f758e964d43462d608713 -> 
-  custom:scripting/monoscript/fileName/BF_MowingManager.cs: ca9fb34d015f22c9c33ab9b4d6168ace -> 
-  custom:scripting/monoscript/fileName/DOTweenModuleUI.cs: 53c26b618f695b59a868eebdc97332ad -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/BF_SetInteractiveShaderEffectsTriplanar.cs: 4692943bb94ab1daadd6565ee2bed37b -> 
-  custom:scripting/monoscript/fileName/BF_SetInteractiveShaderEffects.cs: 834a3405433c69bde6f678f910fc99e7 -> 
-  custom:scripting/monoscript/fileName/ColorMapEditor.cs: acc7014c99c71111a5c1865027725798 -> 
-  custom:scripting/monoscript/fileName/BF_MowingManagerEditor.cs: f7fdde70fa3cb503c4217d4dd751370f -> 
-  custom:scripting/monoscript/fileName/StylizedGrassGUI.cs: 91a9d8d4a2427461545d91e7502f692b -> 
-  custom:scripting/monoscript/fileName/BF_Terrain.cs: 2b11e4275c7e95c1cede044e5a111903 -> 
-  custom:scripting/monoscript/fileName/HideImage.cs: b070d4f600b8cae0e2c7444676c59e8b -> 
-  custom:scripting/monoscript/fileName/HideShowButtons.cs: 261fcfd4412766616d29e8f85b9e32f8 -> 
-  custom:scripting/monoscript/fileName/PlayerController.cs: cc9a5c12ca6ec1e3695a5bfc58a01e94 -> 
-  custom:scripting/monoscript/fileName/TemporalReprojection.cs: 8d8ef04679f91badb7846f410aac9000 -> 
-  custom:scripting/monoscript/fileName/StylizedGrassRenderer.cs: 9b0774f0856f626a46e7b8819242770a -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/VelocityBuffer.cs: 1a33fde1ad336bd4b4a99145e8c56618 -> 
-  custom:scripting/monoscript/fileName/Buttons.cs: e2aacc9d1751c7c0f3072c5591a0448a -> 
-  custom:scripting/monoscript/fileName/EffectBase.cs: 683e47f19c3b5fa5c6a447ac1c97f3fb -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/Extensions.cs: d6930255f665845b9be14c7445394174 -> 
-  custom:scripting/monoscript/fileName/GrassMaskingSphere.cs: 8a280ea4e930c32343bfabbd7a9c4bce -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/ColorMapInspector.cs: e17afe0fc1de6302e748b338587df491 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/DOTweenModuleAudio.cs: 371877257ce39f5f0996ea556debbc8a -> 
-  custom:scripting/monoscript/fileName/GrassColorMapRendererInspector.cs: c15375107713ea9e84b90dbb5e2efb06 -> 
-  custom:scripting/monoscript/fileName/DOTweenModulePhysics2D.cs: 63b0e5981d81d026672954b54596f5ae -> 
-  custom:scripting/monoscript/fileName/InputSystemSwitcher.cs: 872b32d10126af4b1bc8c3169d212e06 -> 
-  custom:scripting/monoscript/fileName/StylizedGrassRendererInspector.cs: c50883d0974abf3b1cd89b440ab10dcc -> 
-  custom:scripting/monoscript/fileName/GrassBender.cs: 9b3ef71e64d389d78e4b535c1b78e7a9 -> 
-  custom:scripting/monoscript/fileName/BF_FPSDisplay.cs: 483c01335156024f2c830155d9553508 -> 
-  custom:scripting/monoscript/fileName/BloomGraphDrawer.cs: e863c7d099e845c18067af614d5f8d98 -> 
-  custom:scripting/monoscript/fileName/FrustumJitter.cs: 600f96eee00b3e6a2df82564922f9637 -> 
-  custom:scripting/monoscript/fileName/BF_TractorController.cs: 52aef99398190e1b025f8ede065ac491 -> 
-  custom:scripting/monoscript/fileName/BF_MowingUI.cs: e4481687bcd08b1a3384448e8757e695 -> 
-  custom:scripting/monoscript/fileName/Controller.cs: 9ac834cf3508dd1b6236017959eb9876 -> 
-  custom:scripting/monoscript/fileName/GrassColorMap.cs: 8a76b873c0e0eb0e83a528b313341631 -> 
-  custom:scripting/monoscript/fileName/BF_BallPlayer.cs: 73dd1d86a11f46324d26765b6d504422 -> 
-  custom:scripting/monoscript/fileName/BF_BallPlayerTriplanar.cs: a5221ebbaa4ad01645aa0c9005ec92c8 -> 
-  custom:scripting/monoscript/fileName/OrbitCamera.cs: 07e21ecc923c4b0be8bfb960d9c4a8dc -> 
-  custom:scripting/monoscript/fileName/DOTweenModuleSprite.cs: e35fb5eb1c483cffc283a374a5e25466 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/DOTweenModulePhysics.cs: 87f8974001cd2397421cfdcad1904e83 -> 
-  custom:scripting/monoscript/fileName/Bloom.cs: a9030d4676c5d3f83ab9f3be499621a7 -> e051d0d488dd04170db16f16dbc31846
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/VelocityBufferTag.cs: 22db1051211ddcc0a9e51d00f0a810ad -> 
-  custom:scripting/monoscript/fileName/MoveInCircle.cs: 08fc0c516e971a2ff15a881d0ff01613 -> 
-  custom:scripting/monoscript/fileName/AssetInfo.cs: cc596b1de97afd27cd143117c87e9690 -> 
-  custom:scripting/monoscript/fileName/BF_RainActivator.cs: b1743f68563cbd45b235a8919786c4d2 -> 
-  custom:scripting/monoscript/fileName/ColorMapRendering.cs: 09bb30f63d6ffc4f3ad6d7670c4ef6be -> 
-  custom:scripting/monoscript/fileName/Demo.cs: 0b7a92f05528653df5e52544de74f590 -> 
-  custom:scripting/monoscript/fileName/BloomEditor.cs: 5ab631c4212beacba7b0d37720ccaa65 -> 94b80d370f2c498e587690092eb47271
-  custom:scripting/monoscript/fileName/BF_TractorCamera.cs: 2a84c9f346d074a639d5921e36b97f2e -> 
-  custom:scripting/monoscript/fileName/BF_FxOnMouseClick.cs: 1e0c1ea7c5614a8da5cff12f25b6188a -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/GrassRenderFeature.cs: 80f50dd013e41e0abd9beffdfc08325b -> 
-  custom:scripting/monoscript/fileName/BF_MeshExtrusion.cs: e3eb8d31fe49dab6525d56110f1c841c -> 
-  custom:scripting/monoscript/fileName/BF_SubShowcase.cs: 94a302ab722e86a83176ec632909d5c9 -> 
-  custom:scripting/monoscript/fileName/BF_MowingTool.cs: f13690883579693dada66fef0f6c9282 -> 
-  custom:scripting/monoscript/fileName/BF_TerrainEditor.cs: 4b77875f03465ca858f392d5baa27a8a -> 
-========================================================================
-Received Prepare
-Switching render pipeline 28bef4cc5a871154da5913a2a2126188 -> 00000000000000000000000000000000
-Refreshing native plugins compatible for Editor in 1.78 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 44 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 123 unused Assets / (5.2 MB). Loaded Objects now: 5572.
-Memory consumption went from 127.5 MB to 122.3 MB.
-Total: 3.761200 ms (FindLiveObjects: 0.257800 ms CreateObjectMapping: 0.141600 ms MarkObjects: 1.672500 ms  DeleteObjects: 1.688700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/GrassColorMapRenderer.cs: 77f44fee0406869437ba29cafb9aa562 -> 
-  custom:scripting/monoscript/fileName/ShaderConfigurator.cs: 9233b497520a37f23f7d7d07ba7e8b61 -> 
-  custom:scripting/monoscript/fileName/DOTweenModuleUtils.cs: 34ad347c902a97803d1c13fe65e97957 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/GrassBenderInspector.cs: f61e50f01f4350895b9638f686719383 -> 
-  custom:scripting/monoscript/fileName/Cursors.cs: 8ceb506cb43bbbf8bc15fe66a4c323be -> 
-  custom:scripting/monoscript/fileName/CameraPosition.cs: e732973052cb68f8e8bdea9d3c698b87 -> 
-  custom:scripting/monoscript/fileName/BF_RotatorDisplay.cs: 2a21ef8f2c3ff5cfd076f7dfb72cddbe -> 
-  custom:scripting/monoscript/fileName/BF_AssetManager.cs: 5d2668df5829c5ef96167aa1edb6eee2 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/StylizedGrassEditor.cs: 07c61d94937c0dbdae3e4047a143f086 -> 
-  custom:scripting/monoscript/fileName/DOTweenModuleUnityVersion.cs: 5fda8b30fb2f0276062c9b201e3b53c4 -> 
-  custom:scripting/monoscript/fileName/PipelineUtilities.cs: 9d2ede4fa77845ef53bdeae294446944 -> 
-  custom:scripting/monoscript/fileName/MaterialUI.cs: c30fbbb3859f758e964d43462d608713 -> 
-  custom:scripting/monoscript/fileName/BF_MowingManager.cs: ca9fb34d015f22c9c33ab9b4d6168ace -> 
-  custom:scripting/monoscript/fileName/DOTweenModuleUI.cs: 53c26b618f695b59a868eebdc97332ad -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/BF_SetInteractiveShaderEffectsTriplanar.cs: 4692943bb94ab1daadd6565ee2bed37b -> 
-  custom:scripting/monoscript/fileName/BF_SetInteractiveShaderEffects.cs: 834a3405433c69bde6f678f910fc99e7 -> 
-  custom:scripting/monoscript/fileName/ColorMapEditor.cs: acc7014c99c71111a5c1865027725798 -> 
-  custom:scripting/monoscript/fileName/BF_MowingManagerEditor.cs: f7fdde70fa3cb503c4217d4dd751370f -> 
-  custom:scripting/monoscript/fileName/StylizedGrassGUI.cs: 91a9d8d4a2427461545d91e7502f692b -> 
-  custom:scripting/monoscript/fileName/BF_Terrain.cs: 2b11e4275c7e95c1cede044e5a111903 -> 
-  custom:scripting/monoscript/fileName/HideImage.cs: b070d4f600b8cae0e2c7444676c59e8b -> 
-  custom:scripting/monoscript/fileName/HideShowButtons.cs: 261fcfd4412766616d29e8f85b9e32f8 -> 
-  custom:scripting/monoscript/fileName/PlayerController.cs: cc9a5c12ca6ec1e3695a5bfc58a01e94 -> 
-  custom:scripting/monoscript/fileName/TemporalReprojection.cs: 8d8ef04679f91badb7846f410aac9000 -> 
-  custom:scripting/monoscript/fileName/StylizedGrassRenderer.cs: 9b0774f0856f626a46e7b8819242770a -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/VelocityBuffer.cs: 1a33fde1ad336bd4b4a99145e8c56618 -> 
-  custom:scripting/monoscript/fileName/Buttons.cs: e2aacc9d1751c7c0f3072c5591a0448a -> 
-  custom:scripting/monoscript/fileName/EffectBase.cs: 683e47f19c3b5fa5c6a447ac1c97f3fb -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/Extensions.cs: d6930255f665845b9be14c7445394174 -> 
-  custom:scripting/monoscript/fileName/GrassMaskingSphere.cs: 8a280ea4e930c32343bfabbd7a9c4bce -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/ColorMapInspector.cs: e17afe0fc1de6302e748b338587df491 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/DOTweenModuleAudio.cs: 371877257ce39f5f0996ea556debbc8a -> 
-  custom:scripting/monoscript/fileName/GrassColorMapRendererInspector.cs: c15375107713ea9e84b90dbb5e2efb06 -> 
-  custom:scripting/monoscript/fileName/DOTweenModulePhysics2D.cs: 63b0e5981d81d026672954b54596f5ae -> 
-  custom:scripting/monoscript/fileName/InputSystemSwitcher.cs: 872b32d10126af4b1bc8c3169d212e06 -> 
-  custom:scripting/monoscript/fileName/StylizedGrassRendererInspector.cs: c50883d0974abf3b1cd89b440ab10dcc -> 
-  custom:scripting/monoscript/fileName/GrassBender.cs: 9b3ef71e64d389d78e4b535c1b78e7a9 -> 
-  custom:scripting/monoscript/fileName/BF_FPSDisplay.cs: 483c01335156024f2c830155d9553508 -> 
-  custom:scripting/monoscript/fileName/BloomGraphDrawer.cs: e863c7d099e845c18067af614d5f8d98 -> 
-  custom:scripting/monoscript/fileName/FrustumJitter.cs: 600f96eee00b3e6a2df82564922f9637 -> 
-  custom:scripting/monoscript/fileName/BF_TractorController.cs: 52aef99398190e1b025f8ede065ac491 -> 
-  custom:scripting/monoscript/fileName/BF_MowingUI.cs: e4481687bcd08b1a3384448e8757e695 -> 
-  custom:scripting/monoscript/fileName/Controller.cs: 9ac834cf3508dd1b6236017959eb9876 -> 
-  custom:scripting/monoscript/fileName/GrassColorMap.cs: 8a76b873c0e0eb0e83a528b313341631 -> 
-  custom:scripting/monoscript/fileName/BF_BallPlayer.cs: 73dd1d86a11f46324d26765b6d504422 -> 
-  custom:scripting/monoscript/fileName/BF_BallPlayerTriplanar.cs: a5221ebbaa4ad01645aa0c9005ec92c8 -> 
-  custom:scripting/monoscript/fileName/OrbitCamera.cs: 07e21ecc923c4b0be8bfb960d9c4a8dc -> 
-  custom:scripting/monoscript/fileName/DOTweenModuleSprite.cs: e35fb5eb1c483cffc283a374a5e25466 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/DOTweenModulePhysics.cs: 87f8974001cd2397421cfdcad1904e83 -> 
-  custom:scripting/monoscript/fileName/Bloom.cs: a9030d4676c5d3f83ab9f3be499621a7 -> e051d0d488dd04170db16f16dbc31846
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/VelocityBufferTag.cs: 22db1051211ddcc0a9e51d00f0a810ad -> 
-  custom:scripting/monoscript/fileName/MoveInCircle.cs: 08fc0c516e971a2ff15a881d0ff01613 -> 
-  custom:scripting/monoscript/fileName/AssetInfo.cs: cc596b1de97afd27cd143117c87e9690 -> 
-  custom:scripting/monoscript/fileName/BF_RainActivator.cs: b1743f68563cbd45b235a8919786c4d2 -> 
-  custom:scripting/monoscript/fileName/ColorMapRendering.cs: 09bb30f63d6ffc4f3ad6d7670c4ef6be -> 
-  custom:scripting/monoscript/fileName/Demo.cs: 0b7a92f05528653df5e52544de74f590 -> 
-  custom:scripting/monoscript/fileName/BloomEditor.cs: 5ab631c4212beacba7b0d37720ccaa65 -> 94b80d370f2c498e587690092eb47271
-  custom:scripting/monoscript/fileName/BF_TractorCamera.cs: 2a84c9f346d074a639d5921e36b97f2e -> 
-  custom:scripting/monoscript/fileName/BF_FxOnMouseClick.cs: 1e0c1ea7c5614a8da5cff12f25b6188a -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/GrassRenderFeature.cs: 80f50dd013e41e0abd9beffdfc08325b -> 
-  custom:scripting/monoscript/fileName/BF_MeshExtrusion.cs: e3eb8d31fe49dab6525d56110f1c841c -> 
-  custom:scripting/monoscript/fileName/BF_SubShowcase.cs: 94a302ab722e86a83176ec632909d5c9 -> 
-  custom:scripting/monoscript/fileName/BF_MowingTool.cs: f13690883579693dada66fef0f6c9282 -> 
-  custom:scripting/monoscript/fileName/BF_TerrainEditor.cs: 4b77875f03465ca858f392d5baa27a8a -> 
-========================================================================
-Received Import Request.
-  Time since last request: 21571.827341 seconds.
-  path: Assets/RageRun Games/Pet Project/Scenes/Main.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RageRun Games/Pet Project/Scenes/Main.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1695befa8c8f811cd5c9cd04165df0e4') in 0.002458 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0

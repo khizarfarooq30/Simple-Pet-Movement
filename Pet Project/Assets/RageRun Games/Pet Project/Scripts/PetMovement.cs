@@ -29,7 +29,21 @@ public class PetMovement : MonoBehaviour
     private Leader leader;
 
     public bool EnableFollow { get; set; }
+<<<<<<< Updated upstream
 
+=======
+    
+    public BaseMoveStrategy baseMoveStrategy;
+
+    private Vector3 followOffset;
+    
+    public Vector3 FollowOffset
+    {
+        get => followOffset;
+        set => followOffset = value;
+    }
+    
+>>>>>>> Stashed changes
     private void Start()
     {
         initialYPosition = transform.position.y;
@@ -72,8 +86,62 @@ public class PetMovement : MonoBehaviour
             animator.SetBool("Moving", velocity.magnitude > 0.1f);
         }
     }
+<<<<<<< Updated upstream
 
     public void SetFollowTarget(Transform target)
+=======
+    
+    private void AssignStrategy()
+    {
+        // num keys assign strategies based on all number keys
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+             baseMoveStrategy = new BoxFormationStrategy(leader, followTransform, transform,  index);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            baseMoveStrategy = new ChainedSnakeLikeStrategy(leader, followTransform, transform,  index);
+        } 
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            baseMoveStrategy = new CrazyCircularStrategy(leader, followTransform, transform,  index);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            baseMoveStrategy = new GoldenRatioStrategy(leader, followTransform, transform,  index);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            baseMoveStrategy = new GoldenRatioRepelStrategy(leader, followTransform, transform,  index);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            baseMoveStrategy = new LeaderRepelStrategy(leader, followTransform, transform,  index);
+        } 
+        else if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            baseMoveStrategy = new RowColumnAdaptiveFormationStrategy(leader, followTransform, transform,  index);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            baseMoveStrategy = new CircularFormationStrategy( leader, followTransform, transform,  index);
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            baseMoveStrategy = new TriangleFormationStrategy(leader, followTransform, transform,  index);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            baseMoveStrategy = new TriangleRepelStrategy(leader, followTransform, transform, index);
+        }
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            baseMoveStrategy = new PetRepelPetStrategy(leader, followTransform, transform, index);
+        }
+    }
+   
+    public void SetFollowEnable(Transform followTransform)
+>>>>>>> Stashed changes
     {
         followTransform = target;
         EnableFollow = true;
