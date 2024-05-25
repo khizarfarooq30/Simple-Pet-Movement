@@ -22,10 +22,7 @@ The pet movement approach consists of two main components: the leader and the fo
   - Leader Repel Formation
   - Row-Column Adaptive Formation
   - Circular Formation
-  - Triangle Formation
-  - Triangle Repel Formation
   - Pet Repel Pet Formation
-  - Test Strategy
 
 ### Usage
 - **Leader Setup**: Attach the `Leader` script to the GameObject that you want to act as the leader. Customize the movement parameters and assign any necessary references in the Inspector.
