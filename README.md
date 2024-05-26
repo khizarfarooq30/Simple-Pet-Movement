@@ -1,7 +1,3 @@
-Got it! I'll start by updating the README with the new features described in these scripts. Once you provide the remaining scripts, I'll include those updates as well. Here's the initial updated README based on the information provided:
-
----
-
 # Simple Pet Movement
 
 This repository contains scripts for implementing a simple pet movement behavior in Unity. The simple approach allows for creating follower objects that mimic the movements of a designated leader object, resulting in a chain-like formation where the leader moves ahead and the followers trail behind.
